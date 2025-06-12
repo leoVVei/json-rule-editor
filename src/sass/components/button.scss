@@ -1,16 +1,19 @@
+@use "../utils";
+@use "../variables";
+
 
 .nav-btn {
   margin: 30px 0;
 }
 
 .nav-glass-btn {
-  @include link;
-  font-size: $btn-font-size;
+  @include utils.link;
+  font-size: variables.$btn-font-size;
   height: 50px;
   width: 300px;
 
   &:hover {
-    background: $btn-bg-clr-hover;  
+    background: variables.$btn-bg-clr-hover;  
   }
 }
 
@@ -35,9 +38,9 @@
 
 .btn {
   border-radius: 5px;
-  color: $btn-color;
+  color: variables.$btn-color;
   font-size: 16px;
-  font-family: $form-font-family;
+  font-family: variables.$form-font-family;
   height: 45px;
   outline:none;
   padding-top: 0;
@@ -57,8 +60,8 @@ a.btn.btn-lg.btn-primary {
 }
 
 .primary-btn {
-  background-color: $primary-btn-color;
-  border: 1px solid $primary-btn-color;
+  background-color: variables.$primary-btn-color;
+  border: 1px solid variables.$primary-btn-color;
 }
 
 .primary-btn:focus {
@@ -67,8 +70,8 @@ a.btn.btn-lg.btn-primary {
 }
 
 .cancel-btn {
-  background-color: $cancel-btn-color;
-  border: 1px solid $cancel-btn-color;
+  background-color: variables.$cancel-btn-color;
+  border: 1px solid variables.$cancel-btn-color;
 }
 
 .cancel-btn:focus {
@@ -77,56 +80,56 @@ a.btn.btn-lg.btn-primary {
 }
 
 .btn-success {
-  background-color: $primary-btn-color;
-  border: 1px solid $primary-btn-color;
+  background-color: variables.$primary-btn-color;
+  border: 1px solid variables.$primary-btn-color;
   line-height: 45px;
   text-decoration: none;
 }
 
 .btn-link {
-  background-color: $cancel-btn-color;
-  border: 1px solid $cancel-btn-color;
+  background-color: variables.$cancel-btn-color;
+  border: 1px solid variables.$cancel-btn-color;
   line-height: 45px;
   text-decoration: none;
 }
 
 .btn-danger {
-  background-color: $danger;
-  border: 1px solid $danger;
+  background-color: variables.$danger;
+  border: 1px solid variables.$danger;
   line-height: 45px;
   text-decoration: none;
 }
 
 .btn-primary {
-  background-color: $primary-btn-color;
-  border: 1px solid $primary-btn-color;
+  background-color: variables.$primary-btn-color;
+  border: 1px solid variables.$primary-btn-color;
   line-height: 45px;
   text-decoration: none;
 }
 
 .btn-dark {
-  background-color: $button-dark;
-  border: 1px solid $button-dark;
+  background-color: variables.$button-dark;
+  border: 1px solid variables.$button-dark;
 }
 
 .btn-warning {
-  background-color: $warning-btn;
-  border: 1px solid $warning-btn;
+  background-color: variables.$warning-btn;
+  border: 1px solid variables.$warning-btn;
 }
 
 .btn-warning:focus {
-  background-color: $danger;  
+  background-color: variables.$danger;  
 }
 
 .btn-toolbar {
-    background-color: $toobar-btn-color;
-    border: 1px solid $toobar-btn-color;
+    background-color: variables.$toobar-btn-color;
+    border: 1px solid variables.$toobar-btn-color;
     width: 100px;
     height: 35px;
 }
 
 .btn-toolbar:focus {
-    background-color: $form-field-color;
+    background-color: variables.$form-field-color;
 }
 
 .btn-group-container {
@@ -134,7 +137,7 @@ a.btn.btn-lg.btn-primary {
   flex-direction: row;
 
   .btn-grp {
-    border: 1px solid $form-field-color;
+    border: 1px solid variables.$form-field-color;
     cursor: pointer;
   }
 
@@ -153,7 +156,7 @@ a.btn.btn-lg.btn-primary {
     border-radius: 5px;
     background-color: #fff;
     cursor: pointer;
-    font-family: $form-font-family;
+    font-family: variables.$form-font-family;
     font-size: 13px;
     height: 35px;
     margin: 0;
@@ -164,23 +167,23 @@ a.btn.btn-lg.btn-primary {
   &.dark {
 
     .btn-grp {
-      border: 1px solid $panel-bg-color;
+      border: 1px solid variables.$panel-bg-color;
     }
     button {
       border-radius: 0;
     }
     button:hover {
-      background-color: $primary-btn-color;
+      background-color: variables.$primary-btn-color;
       border-radius: 0;
       color: #fff;
     }
     button:focus {
-      background-color: $primary-btn-color;
+      background-color: variables.$primary-btn-color;
       border-radius: 0;
       color: #fff;
     }
     button.active {
-      background-color: $primary-btn-color;
+      background-color: variables.$primary-btn-color;
       border-radius: 0;
       color: #fff;
     }
@@ -189,23 +192,23 @@ a.btn.btn-lg.btn-primary {
   &.md-blue {
 
     .btn-grp {
-      border: 1px solid $panel-bg-color;
+      border: 1px solid variables.$panel-bg-color;
     }
     button {
       border-radius: 0;
     }
     button:hover {
-      background-color: $primary-btn-color;
+      background-color: variables.$primary-btn-color;
       border-radius: 0;
       color: #fff;
     }
     button:focus {
-      background-color: $primary-btn-color;
+      background-color: variables.$primary-btn-color;
       border-radius: 0;
       color: #fff;
     }
     button.active {
-      background-color: $primary-btn-color;
+      background-color: variables.$primary-btn-color;
       border-radius: 0;
       color: #fff;
     }
@@ -214,23 +217,23 @@ a.btn.btn-lg.btn-primary {
   &.light {
 
     .btn-grp {
-      border: 1px solid $form-field-color;
+      border: 1px solid variables.$form-field-color;
     }
     button {
       border-radius: 5px;
     }
     button:hover {
-      background-color: $form-field-color;
+      background-color: variables.$form-field-color;
       border-radius: 0;
       color: #fff;
     }
     button:focus {
-      background-color: $form-field-color;
+      background-color: variables.$form-field-color;
       border-radius: 0;
       color: #fff;
     }
     button.active {
-      background-color: $form-field-color;
+      background-color: variables.$form-field-color;
       border-radius: 0;
       color: #fff;
     }

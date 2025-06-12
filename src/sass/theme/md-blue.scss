@@ -1,35 +1,37 @@
+@use "../variables";
+
 body.md-blue
 {
-  background: $body-clr-mdblue;
-  color: $form-label-color-drk;
+  background: variables.$body-clr-mdblue;
+  color: variables.$form-label-color-drk;
 }
 
 .md-blue {
     label {
-        color: $form-label-color-drk;
+        color: variables.$form-label-color-drk;
     }
 
     h1 {
-        color: $title-color-drk;
+        color: variables.$title-color-drk;
     }
 
     h3 {
-        color: $page-title-color-dark;
+        color: variables.$page-title-color-dark;
     }
 
     h4 {
-        color: $form-label-color-drk;
+        color: variables.$form-label-color-drk;
     }
 
     a {
-        color: $form-label-color-drk;
+        color: variables.$form-label-color-drk;
     }
 
     .tab {
-        color: $form-label-color-drk;
+        color: variables.$form-label-color-drk;
 
         &.active {
-            color: $form-label-color-drk;
+            color: variables.$form-label-color-drk;
         }
     }
 
@@ -39,7 +41,7 @@ body.md-blue
         color: #000;
 
         a {
-            color: $link-color;
+            color: variables.$link-color;
         }
     }
 }

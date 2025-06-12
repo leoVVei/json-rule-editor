@@ -1,14 +1,14 @@
-@import './variables.scss';
-@import './utils.scss';
-@import './components/index.scss';
-@import './theme/index.scss';
+@use 'variables.scss';
+@use 'utils.scss';
+@use 'components/index.scss';
+@use 'theme/index.scss' as index2;
 
 h1 {
     color: blue;
 }
 
 .main-container {
-    font-family: $title-font-family;
+    font-family: variables.$title-font-family;
     margin: {
         right: 30px;
     }
@@ -25,13 +25,13 @@ h1 {
     }
 
     &.open {
-        left: $sideNavWidth + 40px;
+        left: variables.$sideNavWidth + 40px;
         width: calc(100% - 360px);
     }   
 }
 
 label {
-    color: $form-label-color;
+    color: variables.$form-label-color;
     font-size: 18px;
     margin-right: 20px;
 }

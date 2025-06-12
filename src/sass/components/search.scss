@@ -1,5 +1,7 @@
+@use "../variables";
+
 .search-field {
-    border: 1px solid $title-bg-clr;
+    border: 1px solid variables.$title-bg-clr;
     border-radius: 10px;
     font-size: 15px;
     height: 30px;
@@ -8,11 +10,11 @@
 }
 
 .search-btn {
-    background-color: $title-bg-clr;
+    background-color: variables.$title-bg-clr;
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    color: $btn-color;
+    color: variables.$btn-color;
     font-size: 15px;
     height: 34px;
     padding: {

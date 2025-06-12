@@ -1,25 +1,27 @@
+@use "../variables";
+
 .header-container {
-    background-color: $title-color;
-    color: $title-bg-clr;
+    background-color: variables.$title-color;
+    color: variables.$title-bg-clr;
     display: flex;
-    font-family: $title-font-family;
+    font-family: variables.$title-font-family;
     justify-content: flex-end;
     font-size: 22px;
     padding: 15px;
 
   &.light {
-    background-color: $title-color;
-    color: $title-bg-clr;
+    background-color: variables.$title-color;
+    color: variables.$title-bg-clr;
   }
 
   &.dark {
-    background-color: $title-bg-clr-drk;
-    color: $title-color-drk;
+    background-color: variables.$title-bg-clr-drk;
+    color: variables.$title-color-drk;
   }
 
   &.md-blue {
-    background-color: $title-bg-clr-mdblue;
-    color: $title-color-drk;
+    background-color: variables.$title-bg-clr-mdblue;
+    color: variables.$title-color-drk;
   }
 }
 
@@ -27,9 +29,9 @@
     display: flex;
 
     h1 {
-        color: $page-title-color;
+        color: variables.$page-title-color;
         font-size: 1.5rem;
-        font-family: $title-font-family;
+        font-family: variables.$title-font-family;
         font-weight: 400;
         margin-top: 5px;
     }
@@ -37,7 +39,7 @@
 
 
 .icon-card {
-    color: $icon-color;
+    color: variables.$icon-color;
     font-size: 45px;
     margin-right: 10px;
 }

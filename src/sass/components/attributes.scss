@@ -1,18 +1,20 @@
+@use "../variables";
+
 @use "sass:map";
 
 
 
 .attributes-header {
-    color: $form-label-color;
+    color: variables.$form-label-color;
     display: flex;
     flex-wrap: wrap;
-    font-family: $tab-font-family;
+    font-family: variables.$tab-font-family;
     justify-content: flex-end;
     margin: 0;
     width: 100%;
 
     &.dark {
-        color: $link-clr-drk;
+        color: variables.$link-clr-drk;
 
         .plus-icon {
             background: url('../../assets/icons/plus-rounded-dark.svg') no-repeat;
@@ -21,7 +23,7 @@
     }
 
     &.md-blue {
-        color: $link-clr-drk;
+        color: variables.$link-clr-drk;
 
         .plus-icon {
             background: url('../../assets/icons/plus-rounded-dark.svg') no-repeat;
@@ -30,7 +32,7 @@
     }
 
     &.light {
-        color: $form-label-color;
+        color: variables.$form-label-color;
 
         .plus-icon {
             background: url('../../assets/icons/plus-icon-rounded.svg') no-repeat;
@@ -97,31 +99,31 @@ td.attributes-header {
 @mixin attr-linktype($color) {
     background-color: $color;
     border-radius: 5px;
-    color: $btn-color;
+    color: variables.$btn-color;
     padding: 2px 5px;
     font-size: 12px;
     text-transform: uppercase;
 }
 
 .string {
-    @include attr-linktype(map-get($attribute-type, "string"));
+    @include attr-linktype(map.get(variables.$attribute-type, "string"));
 }
 
 .boolean {
-    @include attr-linktype(map-get($attribute-type, "boolean"));
+    @include attr-linktype(map.get(variables.$attribute-type, "boolean"));
 }
 
 .array {
-    @include attr-linktype(map-get($attribute-type, "array"));
+    @include attr-linktype(map.get(variables.$attribute-type, "array"));
     
 }
 
 .object {
-    @include attr-linktype(map-get($attribute-type, "object"));
+    @include attr-linktype(map.get(variables.$attribute-type, "object"));
 }
 
 .number {
-    @include attr-linktype(map-get($attribute-type, "number"));
+    @include attr-linktype(map.get(variables.$attribute-type, "number"));
 }
 
 .view-attribute {
@@ -134,15 +136,15 @@ td.attributes-header {
 
 .md-blue {
     .view-attribute {
-        color: $form-label-color-drk;
+        color: variables.$form-label-color-drk;
     }
 }
 
 .dark {
-    color: $form-label-color-drk;
+    color: variables.$form-label-color-drk;
 }
 
 .view-params-container {
     width: 40%;
-    color: $dark-color;
+    color: variables.$dark-color;
 }

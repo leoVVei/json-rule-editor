@@ -1,6 +1,8 @@
+@use "../variables";
+
 .nav-container {
-    background-color: $title-bg-clr;
-    font-family: $title-font-family;
+    background-color: variables.$title-bg-clr;
+    font-family: variables.$title-font-family;
     height: 100%;
     left: 0;
     margin-top: -70px;
@@ -13,19 +15,19 @@
     }
 
     &.open {
-      width: $sideNavWidth;
+      width: variables.$sideNavWidth;
     }
 
     &.light {
-      background-color: $title-bg-clr;
+      background-color: variables.$title-bg-clr;
     }
 
     &.dark {
-      background-color: $title-bg-clr-drk;
+      background-color: variables.$title-bg-clr-drk;
     }
 
     &.md-blue {
-      background-color: $title-bg-clr-mdblue;
+      background-color: variables.$title-bg-clr-mdblue;
     }
 }
 
@@ -36,7 +38,7 @@
   margin-bottom: 25px;
 
   a {
-    color: $title-color;
+    color: variables.$title-color;
   }
 }
 
@@ -54,8 +56,8 @@
   padding: 0;
 
   li {
-    color: $btn-color;
-    font-family: $btn-font-family;
+    color: variables.$btn-color;
+    font-family: variables.$btn-font-family;
     font-size: 15px;
     height: 40px;
     line-height: 40px;
@@ -63,18 +65,18 @@
   }
 
   li:hover {
-    background: $btn-bg-clr;
+    background: variables.$btn-bg-clr;
   }
 
   a {
-    color: $btn-color;
+    color: variables.$btn-color;
   }
 
   .link-heading {
     font-size: 20px;
 
     a {
-      color: $btn-color;
+      color: variables.$btn-color;
   
       .rules-icon {
         background: url('../../assets/icons/rules.svg') no-repeat;
@@ -109,7 +111,7 @@
     padding-left: 30px;
 
     a {
-      color: $btn-color;
+      color: variables.$btn-color;
       font-size: 16px;
       text-decoration: none;
     }
@@ -133,7 +135,7 @@
     }
 
     li {
-      border-left: 3px solid $border-left-color;
+      border-left: 3px solid variables.$border-left-color;
       cursor: pointer;
       line-height: 20px;
       visibility: hidden;
@@ -145,7 +147,7 @@
       }
 
       &.active a{
-        color: $link-active-color;
+        color: variables.$link-active-color;
       }
     }
 
