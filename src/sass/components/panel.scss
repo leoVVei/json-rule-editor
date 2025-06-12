@@ -1,3 +1,5 @@
+@use "../variables";
+
 @use "sass:map";
 
 .panel-wrapper {
@@ -11,34 +13,34 @@
     border: 1px solid #bbb;
     box-shadow: 1px 3px #eee;
     display: flex;
-    font-family: $tab-font-family;
+    font-family: variables.$tab-font-family;
     font-size: 17px;
     flex-wrap: wrap;
     margin-top: 30px;
     padding: 20px;
 
     &.string-type {
-        border-left: 5px solid map-get($attribute-type, "string");
+        border-left: 5px solid map.get(variables.$attribute-type, "string");
     }
 
     &.number-type {
-        border-left: 5px solid map-get($attribute-type, "number");
+        border-left: 5px solid map.get(variables.$attribute-type, "number");
     }
 
     &.date-type {
-        border-left: 5px solid map-get($attribute-type, "date");
+        border-left: 5px solid map.get(variables.$attribute-type, "date");
     }
 
     &.object-type {
-        border-left: 5px solid map-get($attribute-type, "object");
+        border-left: 5px solid map.get(variables.$attribute-type, "object");
     }
 
     &.boolean-type {
-        border-left: 5px solid map-get($attribute-type, "boolean");
+        border-left: 5px solid map.get(variables.$attribute-type, "boolean");
     }
 
     &.array-type {
-        border-left: 5px solid map-get($attribute-type, "array");
+        border-left: 5px solid map.get(variables.$attribute-type, "array");
     }
 
     div {
@@ -59,7 +61,7 @@
     }
     
     .type-badge {
-        background-color: map-get($attribute-type, "boolean");
+        background-color: map.get(variables.$attribute-type, "boolean");
         border-radius: 5px;
         color: white;
         font-size: 14px;
@@ -73,9 +75,9 @@
    }
  
     a {
-        color: $link-color;
+        color: variables.$link-color;
         cursor: pointer;
-        font-family: $tab-font-family;
+        font-family: variables.$tab-font-family;
         font-size: 14px;
         margin-right: 30px;
         text-decoration: none;;
@@ -90,7 +92,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0px 0px 6px 3px #eee;
-    font-family: $title-font-family;
+    font-family: variables.$title-font-family;
     height: 300px;
     padding: 20px;
     width: 80vh;
@@ -122,21 +124,21 @@
 .banner {
     border-radius: 5px;
     display: flex;
-    font-family: $form-font-family;
+    font-family: variables.$form-font-family;
     justify-content: space-between;
     padding: 20px 20px;
 }
 
 .submit-panel {
-    background-color: $panel-bg-color;
-    border: 2px dashed $succees;
-    color: $form-field-color;
+    background-color: variables.$panel-bg-color;
+    border: 2px dashed variables.$succees;
+    color: variables.$form-field-color;
 }
 
 .warning-panel {
-    background-color: $panel-bg-color;
-    border: 2px dashed $warning-dark;
-    color: $form-field-color;
+    background-color: variables.$panel-bg-color;
+    border: 2px dashed variables.$warning-dark;
+    color: variables.$form-field-color;
 }
 
 .banner-container {

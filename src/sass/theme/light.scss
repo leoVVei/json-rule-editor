@@ -1,30 +1,32 @@
+@use "../variables";
+
 body.light {
     background: #fff;
-    color: $form-label-color;
+    color: variables.$form-label-color;
 }
 
 .light {
     label {
-        color: $form-label-color;
+        color: variables.$form-label-color;
     }
 
     h1 {
-        color: $title-bg-clr;
+        color: variables.$title-bg-clr;
     }
 
     h3 {
-        color: $page-title-color;
+        color: variables.$page-title-color;
     }
 
     h4 {
-        color: $form-label-color;
+        color: variables.$form-label-color;
     }
 
     .tab {
-        color: $form-label-color;
+        color: variables.$form-label-color;
 
         &.active {
-            color: $title-bg-clr;
+            color: variables.$title-bg-clr;
         }
     }
 

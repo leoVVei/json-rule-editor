@@ -1,13 +1,15 @@
+@use "../variables";
+
 table {
     &.table {
-        color: $form-field-color;
-        font-family: $form-font-family;
+        color: variables.$form-field-color;
+        font-family: variables.$form-font-family;
         font-size: 16px;
         width: 100%;
     }
 
     tr:first-child {
-        color: $form-label-color;
+        color: variables.$form-label-color;
         text-align: left;
     }
 }

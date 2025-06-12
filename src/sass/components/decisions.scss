@@ -1,3 +1,5 @@
+@use "../variables";
+
 .rule-flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -23,16 +25,16 @@
 }
 
 .add-rulecase-wrapper {
-    border-bottom: 2px dashed $form-label-color;
-    border-top: 2px dashed $form-label-color;
+    border-bottom: 2px dashed variables.$form-label-color;
+    border-top: 2px dashed variables.$form-label-color;
     margin-top: 20px;
     padding: 20px 0;
 }
 
 .add-decision-step {
     display: flex;
-    color: $form-label-color;
-    font-family: $form-font-family;
+    color: variables.$form-label-color;
+    font-family: variables.$form-font-family;
     flex-wrap: wrap;
 
     .step1 {
@@ -50,26 +52,26 @@
 
 .dark {
     .add-decision-step {
-        color: $form-label-color-drk;
+        color: variables.$form-label-color-drk;
     }
 }
 
 .md-blue {
     .add-decision-step {
-        color: $form-label-color-drk;
+        color: variables.$form-label-color-drk;
     }
 }
 
 .light {
     .add-decision-step {
-        color: $form-label-color;
+        color: variables.$form-label-color;
     }
 }
 
 .add-field-panel {
     display: flex;
     flex-direction: row;
-    font-family: $form-font-family;
+    font-family: variables.$form-font-family;
     justify-content: space-between;
     margin-top: 20px;
 

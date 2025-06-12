@@ -1,5 +1,7 @@
+@use "../variables";
+
 .form-groups-inline {
-    font-family: $form-font-family;
+    font-family: variables.$form-font-family;
     display: flex;
     flex-wrap: wrap;
 
@@ -23,9 +25,9 @@
     margin-top: 5px;
 
     input {
-        border: 1px solid $form-border-color;
+        border: 1px solid variables.$form-border-color;
         border-radius: 4px;
-        color: $form-field-color;
+        color: variables.$form-field-color;
         font-size: 16px;
         height: 35px;
         margin-top: 5px;
@@ -35,10 +37,10 @@
 
     select {
         background-color: #fff;
-        border: 1px solid $form-border-color;
+        border: 1px solid variables.$form-border-color;
         border-radius: 4px;
         font-size: 16px;
-        color: $form-field-color;
+        color: variables.$form-field-color;
         height: 40px;
         margin-top: 5px;
         padding-left: 10px;
@@ -57,6 +59,6 @@
 
 .form-error {
     color: red;
-    font-family: $form-font-family;
+    font-family: variables.$form-font-family;
     font-size: 16px;
 }
